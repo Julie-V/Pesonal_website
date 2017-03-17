@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Julie V</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/makeitbetter.css">
+    </head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand white-text" id="hello-world">Hello, world!</a>
+    </div>
+    
+    <!--The right side of the navbar-->
+    <ul class="nav navbar-nav navbar-right hidden-xs">
+      <li><a href="#contactForm" id="contact_me">Contact me</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!--Jumbotron-->
+  <div class="container-fluid">
+    <section class="jumbotron">
+      <h1 class="text-center">Julie.V website</h1>
+      <h3 class="text-center">Here I post my training websites</h3>
+      <h5 class="text-center">At least those which I'm not too much ashamed of</h5>
+      <a href="#contactForm" class="btn btn-default text-center visible-xs">Contact me</a>
+    </section>
+  </div>
+
+
+  <!--Website samples-->
+<section class="container">
+<div class="row col-sm-offset-2">
+      <a href="music_website/index_music_website.html" target="_blank"><figure class="col-sm-5 col-md-pull-1">
+        <img src="images/music-min.jpeg" class="img-rounded img-responsive" alt="Music website"/>
+        <figcaption class="text-center">
+          <h3>Music website</h3>
+          <h5>"Introduction to Bootstrap"</h5>
+          <h5>Microsoft, edX</h5>
+          </figcaption>
+      </figure>
+      </a>
+  
+      <a href="news_website/news_website.html" target="_blank">
+      <figure class="col-sm-5 col-md-push-1">
+        <img src="images/news-min.jpg" class="img-rounded img-responsive" alt="News agency website"/>
+        <figcaption class="text-center">
+          <h3>News agency website</h3>
+          <h5>"Introduction to HTML and Javascript"</h5>
+          <h5>Microsoft, edX</h5>
+        </figcaption>
+      </figure>
+      </a>
+</div>
+
+<div class="row col-sm-offset-2 margin-top">
+  <a href="skillfair_website/skillfair.html" target="_blank">
+  <figure class="col-sm-5 col-md-pull-1">
+        <img src="images/skillfair1-min.jpeg" class="img-rounded img-responsive" alt="Skill fair"/>
+        <figcaption class="text-center">
+          <h3>Skill fair</h3>
+          <h5>"Making a website"</h5>
+          <h5>Codeacademy</h5>
+        </figcaption>  
+    </figure>
+    </a>
+
+  <figure class="col-sm-5 col-md-push-1">
+        <img src="images/ad-min.jpg" href="#" class="img-rounded img-responsive" alt="If you don't see the pic it's blocked by your AdBlock, congratulations!"/>
+        <figcaption class="text-center extra-padding">
+          <h3>Your ad may have been here!</h3>
+        </figcaption>
+      </figure>
+  </div>     
+  
+</section>
+
+<!--Form-->
+
+
+<section class="container-fluid contact">
+  <div class="row text-center">
+    <h4>Want to offer me a job, a project or give me advice?</h4>
+    <h3>Feel free to contact me!</h3>
+  </div>
+
+<div class="row">
+  <div class="col-lg-12">
+    <form form action="javascript:void(null);" onsubmit="call()" name="contactForm" id="contactForm">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-2">
+          <div class="form-group">
+            <label for="name" class="control-label">Your name</label>
+            <input type="text" class="form-control" required="required" minlength="2" placeholder="*Your name" name="name" id="name" value="">
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="control-label">E-mail</label>
+            <input type="email" required="required" class="form-control" placeholder="*Your email" id="email" name="email" value="">
+            <div class="help-block with-errors"></div>
+          </div>
+          <div class="form-group">
+            <label for="tel" class="control-label">Phone</label>
+            <input type="tel" class="form-control" placeholder="Your phone number" id="phone" name="phone" value="">
+            <div class="help-block with-errors"></div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-md-offset-2 col-md-pull-2">
+          <div class="form-group">
+            <label for="message" class="control-label">Your message</label>
+            <textarea name="message" required="required" minlength="2" class="form-control" placeholder="*Enter Your Message" id="message"></textarea>                        
+          </div>
+        </div>
+      </div>
+  <div class="col-lg-12 text-center">
+    <button type="submit" class="btn btn-lg white-text" id="submit">Send</button>
+    </div>
+</form>
+
+<div class="alert alert-success alert-dismissable hidden" id="alertSent">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <h3>Success!</h3>
+  <p>Your message is sent</p>
+</div>
+
+<div class="alert alert-danger alert-dismissable hidden" id="alertFailed">
+  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+  <h3>Houston we have a problem!</h3>
+  <p>Your message wasn't sent :( </br>
+  Try to use English letters only
+  </br> If you think that you filled out the form correctly, please write to juliev.itwork@gmail.com
+  </p>
+</div>
+
+</section>
+
+<!--Footer-->
+<footer>
+  <div class="row">
+    <div class="text-center">
+      <span class="copyright">&copy; Julie.V</span>
+    </div>
+  </div>
+</footer>
+<div id="results"></div>
+
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script>
+  function call() {
+    var msg   = $('#contactForm').serialize();
+        $.ajax({
+          type: 'POST',
+          url: 'contact_me.php',
+          data: msg,
+          success: function(data) {
+            $('#alertSent').removeClass('hidden');
+            $('#results').html(data);
+          },
+          error:  function(xhr, str){
+            $('#alertFailed').removeClass('hidden');
+            alert('Возникла ошибка: ' + xhr.responseCode);
+          }
+        });
+ 
+    }
+</script>
+</body>
+  </html>
